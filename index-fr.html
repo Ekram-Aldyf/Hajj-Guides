@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guide d'orientation pour l'initiative Ikram AlDuyuf">
+    <title>Guide d'orientation - Ikram AlDuyuf</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #F9F9F9;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #9B6FB1;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar .logo img {
+            height: 60px;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .navbar .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .navbar .nav-links a:hover {
+            color: #B3C79C;
+        }
+
+        .navbar .dropdown select {
+            background-color: #B3C79C;
+            color: #fff;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .navbar .dropdown select:hover {
+            background-color: #9B6FB1;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 120px 20px 50px;
+            background: linear-gradient(to bottom, #9B6FB1, #B3C79C);
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .hero .cta-button {
+            background-color: #fff;
+            color: #4A2C6D;
+            padding: 10px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .hero .cta-button:hover {
+            background-color: #B3C79C;
+            transform: scale(1.05);
+        }
+
+        /* Cards Section */
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            padding: 40px 20px;
+            background: #fff;
+        }
+
+        .card {
+            background-color: #F9F9F9;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card i {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            color: #9B6FB1;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #606060;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #B3C79C;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer img {
+            height: 40px;
+            margin-bottom: 10px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #B3C79C;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Logo.png" alt="Ikram AlDuyuf">
+        </div>
+        <div class="dropdown">
+            <select onchange="changeLanguage(this.value)">
+                <option value="index-fr.html" selected>Français</option>
+                <option value="index.html">العربية</option>
+                <option value="index-en.html">English</option>
+                <option value="index-de.html">Deutsch</option>
+            </select>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Bienvenue dans le guide d'orientation</h1>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="cards">
+        <a href="general-guidelines_fr.html" class="card">
+            <i class="fas fa-hand-holding-heart"></i>
+            <h3>Consignes Générales</h3>
+            <p>Découvrez des consignes générales pour vous aider pendant votre voyage.</p>
+        </a>
+        <a href="guide-manual_fr.html" class="card">
+            <i class="fas fa-user-alt"></i>
+            <h3>Manuel du Guide</h3>
+            <p>Instructions pour les guides afin de fournir la meilleure expérience.</p>
+        </a>
+        <a href="pilgrim-guide_fr.html" class="card">
+            <i class="fas fa-kaaba"></i>
+            <h3>Guide du Pèlerin</h3>
+            <p>Instructions complètes pour garantir un pèlerinage fluide.</p>
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <img src="Arabic+English  Logo_V.png" alt="Ikram AlDuyuf">
+        <p>Contact : 
+            <a href="mailto:IkramDH@arbhaj.com" style="color: #fff;">IkramDH@arbhaj.com</a> |
+            <a href="https://wa.me/966125111940" target="_blank" style="color: #fff; text-decoration: none;">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </p>
+        <p>© 2025 Tous droits réservés - Initiative Ikram AlDuyuf</p>
+    </footer>
+
+    <script>
+        function changeLanguage(lang) {
+            const currentPage = window.location.pathname.split('/').pop();
+            const pageName = currentPage.replace(/(-[a-z]{2})?\.html/, '');
+            const newPage = lang; // Use the selected value directly
+            window.location.href = newPage;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="دليل الحاج لمبادرة إكرام الضيف">
+    <title>دليل الحاج - إكرام الضيف</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #F9F9F9;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #9B6FB1;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar .logo img {
+            height: 60px;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .navbar .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .navbar .nav-links a:hover {
+            color: #B3C79C;
+        }
+
+        .navbar .dropdown select {
+            background-color: #B3C79C;
+            color: #fff;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .navbar .dropdown select:hover {
+            background-color: #9B6FB1;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 120px 20px 50px;
+            background: linear-gradient(to bottom, #9B6FB1, #B3C79C);
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 3rem; /* Increased from 2.5rem to match other language pages */
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #B3C79C;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer img {
+            height: 40px;
+            margin-bottom: 10px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #B3C79C;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Logo.png" alt="إكرام الضيف"> <!-- شعار الهيدر -->
+        </div>
+        <div class="dropdown">
+          <select onchange="location = this.value;">
+            <option value="pilgrim-guide.html" selected>العربية</option>
+            <option value="pilgrim-guide_en.html">English</option>
+            <option value="pilgrim-guide_fr.html">Français</option>
+            <option value="pilgrim-guide_de.html">Deutsch</option>
+        </select>
+        
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>دليل الحاج</h1>
+        <p>إرشادات شاملة للحجاج لضمان رحلة ميسرة.</p>
+    </section>
+
+    <!-- فهرس الدليل -->
+<div class="toc" style="padding: 40px 20px; text-align: right;">
+    <h2 style="color: #9B6FB1;"><i class="fas fa-book"></i> فهرس الدليل</h2>
+    <ul style="list-style: none; padding: 0; font-size: 1.1rem;">
+        <li style="margin-bottom: 10px;"><a href="#steps" style="text-decoration: none; color: #9B6FB1;"><i class="fas fa-chevron-circle-right"></i> مناسك الحج خطوة بخطوة</a></li>
+        <li style="margin-bottom: 10px;"><a href="#rights" style="text-decoration: none; color: #9B6FB1;"><i class="fas fa-chevron-circle-right"></i> الحقوق أثناء الحج</a></li>
+        <li style="margin-bottom: 10px;"><a href="#duties" style="text-decoration: none; color: #9B6FB1;"><i class="fas fa-chevron-circle-right"></i> الواجبات أثناء الحج</a></li>
+        <li style="margin-bottom: 10px;"><a href="#religious" style="text-decoration: none; color: #9B6FB1;"><i class="fas fa-chevron-circle-right"></i> التوعية الدينية</a></li>
+        <li style="margin-bottom: 10px;"><a href="#health" style="text-decoration: none; color: #9B6FB1;"><i class="fas fa-chevron-circle-right"></i> التوعية الصحية</a></li>
+        <li style="margin-bottom: 10px;"><a href="#emergency" style="text-decoration: none; color: #9B6FB1;"><i class="fas fa-chevron-circle-right"></i> التصرف في الطوارئ</a></li>
+        <li style="margin-bottom: 10px;"><a href="#faq" style="text-decoration: none; color: #9B6FB1;"><i class="fas fa-chevron-circle-right"></i> الأسئلة الشائعة</a></li>
+        <li style="margin-bottom: 10px;"><a href="#tips" style="text-decoration: none; color: #9B6FB1;"><i class="fas fa-chevron-circle-right"></i> نصائح روحية</a></li>
+    </ul>
+</div>
+
+<!-- أقسام المحتوى الفارغة -->
+<section id="steps" style="padding: 40px 20px; background-color: #F9F9F9;">
+    <h3 style="color:#6C9A8B; font-size: 1.5rem;"><i class="fas fa-kaaba"></i> مناسك الحج خطوة بخطوة</h3>
+    <ul style="list-style: none; padding: 0; font-size: 1.05rem;">
+        <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>الإحرام: النية ولبس ملابس الإحرام.</li>
+        <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>الطواف: سبعة أشواط حول الكعبة.</li>
+        <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>السعي: بين الصفا والمروة.</li>
+        <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>الوقوف بعرفة: يوم 9 ذي الحجة.</li>
+        <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>المبيت بمزدلفة: بعد مغيب شمس عرفة.</li>
+        <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>رمي الجمرات: في أيام التشريق.</li>
+        <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>الحلق أو التقصير.</li>
+        <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>طواف الإفاضة.</li>
+        <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>طواف الوداع.</li>
+    </ul>
+</section>
+
+
+<section id="rights" style="padding: 40px 20px;">
+    <h3 style="color:#6C9A8B; font-size: 1.5rem;"><i class="fas fa-home"></i> الحقوق أثناء الحج</h3>
+    <ul style="list-style: none; padding: 0; font-size: 1.05rem;">
+      <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>السكن النظيف والمكيّف.</li>
+      <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>وجبات يومية مناسبة.</li>
+      <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>مياه صالحة للشرب.</li>
+      <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>إرشاد ديني وصحي بلغتك.</li>
+      <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>وصول للرعاية الطبية عند الحاجة.</li>
+    </ul>
+  </section>
+  
+  <section id="duties" style="padding: 40px 20px;">
+    <h3 style="color:#6C9A8B; font-size: 1.5rem;"><i class="fas fa-clipboard-check"></i> الواجبات أثناء الحج</h3>
+    <ul style="list-style: none; padding: 0; font-size: 1.05rem;">
+      <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>الالتزام بالتعليمات.</li>
+      <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>احترام المرافقين.</li>
+      <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>الحفاظ على النظافة.</li>
+      <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>التقيد بالمواعيد والمجموعات.</li>
+    </ul>
+  </section>
+  
+  <section id="religious" style="padding: 40px 20px;">
+    <h3 style="color:#6C9A8B; font-size: 1.5rem;"><i class="fas fa-quran"></i> التوعية الدينية</h3>
+    <div style="display: flex; gap: 20px; flex-wrap: wrap; font-size: 1.05rem;">
+      <div style="flex: 1; min-width: 200px; background-color: #f1f1f1; padding: 15px; border-radius: 10px; text-align: center;">
+        <i class="fas fa-heart" style="font-size: 24px; color:#6C9A8B;"></i><br>
+        اجعل نيتك خالصة لله
+      </div>
+      <div style="flex: 1; min-width: 200px; background-color: #f1f1f1; padding: 15px; border-radius: 10px; text-align: center;">
+        <i class="fas fa-volume-mute" style="font-size: 24px; color:#6C9A8B;"></i><br>
+        لا ترفع صوتك في الطواف أو السعي
+      </div>
+      <div style="flex: 1; min-width: 200px; background-color: #f1f1f1; padding: 15px; border-radius: 10px; text-align: center;">
+        <i class="fas fa-hands-helping" style="font-size: 24px; color:#6C9A8B;"></i><br>
+        لا تتجادل أو تؤذي غيرك
+      </div>
+    </div>
+  </section>
+  
+  <section id="health" style="padding: 40px 20px;">
+    <h3 style="color:#6C9A8B; font-size: 1.5rem;"><i class="fas fa-notes-medical"></i> التوعية الصحية</h3>
+    <ul style="list-style: none; padding: 0; font-size: 1.05rem;">
+      <li style="margin-bottom: 10px;"><i class="fas fa-syringe" style="color:#6C9A8B; margin-left: 5px;"></i>خذ التطعيمات الموصى بها.</li>
+      <li style="margin-bottom: 10px;"><i class="fas fa-umbrella-beach" style="color:#6C9A8B; margin-left: 5px;"></i>احمل مظلة وارتدِ قبعة.</li>
+      <li style="margin-bottom: 10px;"><i class="fas fa-glass-whiskey" style="color:#6C9A8B; margin-left: 5px;"></i>اشرب ماء بانتظام.</li>
+      <li style="margin-bottom: 10px;"><i class="fas fa-hands-wash" style="color:#6C9A8B; margin-left: 5px;"></i>اغسل يديك وارتدِ كمامة.</li>
+      <li style="margin-bottom: 10px;"><i class="fas fa-bed" style="color:#6C9A8B; margin-left: 5px;"></i>استرح بين المناسك.</li>
+    </ul>
+  </section>
+  
+  <section id="emergency" style="padding: 40px 20px;">
+    <h3 style="color:#6C9A8B; font-size: 1.5rem;"><i class="fas fa-ambulance"></i> التصرف في الطوارئ</h3>
+    <div style="display: flex; gap: 20px; flex-wrap: wrap; font-size: 1.05rem;">
+      <div style="flex: 1; min-width: 200px; background-color: #fff0f0; padding: 15px; border-radius: 10px; text-align: center;">
+        <i class="fas fa-map-marker-alt" style="font-size: 24px; color:#6C9A8B;"></i><br>
+        إذا ضعت: اتصل بالمرشد
+      </div>
+      <div style="flex: 1; min-width: 200px; background-color: #fff0f0; padding: 15px; border-radius: 10px; text-align: center;">
+        <i class="fas fa-tint" style="font-size: 24px; color:#6C9A8B;"></i><br>
+        إذا شعرت بتعب: اجلس واشرب ماء
+      </div>
+      <div style="flex: 1; min-width: 200px; background-color: #fff0f0; padding: 15px; border-radius: 10px; text-align: center;">
+        <i class="fas fa-phone-alt" style="font-size: 24px; color:#6C9A8B;"></i><br>
+        لحالة طارئة: اتصل 937 أو 911
+      </div>
+    </div>
+  </section>
+  
+  <section id="faq" style="padding: 40px 20px;">
+    <h3 style="color:#6C9A8B; font-size: 1.5rem;"><i class="fas fa-question-circle"></i> الأسئلة الشائعة</h3>
+    <div style="display: flex; gap: 20px; flex-wrap: wrap; font-size: 1.05rem;">
+      <div style="flex: 1; min-width: 200px; background-color: #f5f5f5; padding: 15px; border-radius: 10px; text-align: center;">
+        <i class="fas fa-reply" style="font-size: 24px; color:#6C9A8B;"></i><br>
+        هل يجوز التوكيل؟ <br><strong>نعم في حالة العذر</strong>
+      </div>
+      <div style="flex: 1; min-width: 200px; background-color: #f5f5f5; padding: 15px; border-radius: 10px; text-align: center;">
+        <i class="fas fa-hand-paper" style="font-size: 24px; color:#6C9A8B;"></i><br>
+        لمس الحجر الأسود؟ <br><strong>سنة، ليس واجبًا</strong>
+      </div>
+      <div style="flex: 1; min-width: 200px; background-color: #f5f5f5; padding: 15px; border-radius: 10px; text-align: center;">
+        <i class="fas fa-cut" style="font-size: 24px; color:#6C9A8B;"></i><br>
+        متى الحلق أو التقصير؟ <br><strong>بعد جمرة العقبة</strong>
+      </div>
+    </div>
+  </section>
+  
+  <section id="tips" style="padding: 40px 20px;">
+    <h3 style="color:#6C9A8B; font-size: 1.5rem;"><i class="fas fa-praying-hands"></i> نصائح روحية</h3>
+    <div style="display: flex; gap: 20px; flex-wrap: wrap; font-size: 1.05rem;">
+      <div style="flex: 1; min-width: 200px; background-color: #e9f9f1; padding: 15px; border-radius: 10px; text-align: center;">
+        <i class="fas fa-walking" style="font-size: 24px; color:#6C9A8B;"></i><br>
+        احتسب كل خطوة
+      </div>
+      <div style="flex: 1; min-width: 200px; background-color: #e9f9f1; padding: 15px; border-radius: 10px; text-align: center;">
+        <i class="fas fa-users" style="font-size: 24px; color:#6C9A8B;"></i><br>
+        لا تجعل الزحام يُنسيك الهدف
+      </div>
+      <div style="flex: 1; min-width: 200px; background-color: #e9f9f1; padding: 15px; border-radius: 10px; text-align: center;">
+        <i class="fas fa-dove" style="font-size: 24px; color:#6C9A8B;"></i><br>
+        أكثر من الدعاء والذكر
+      </div>
+      <div style="flex: 1; min-width: 200px; background-color: #e9f9f1; padding: 15px; border-radius: 10px; text-align: center;">
+        <i class="fas fa-sync-alt" style="font-size: 24px; color:#6C9A8B;"></i><br>
+        الحج فرصة للتجديد
+      </div>
+    </div>
+  </section>
+  
+
+
+
+    <!-- Footer -->
+    <footer>
+        <img src="Arabic+English  Logo_V.png" alt="إكرام الضيف"> <!-- شعار الفوتر -->
+        <p>للتواصل: 
+            <a href="mailto:IkramDH@arbhaj.com" style="color: #fff;">IkramDH@arbhaj.com</a> |
+            <a href="https://wa.me/966125111940" target="_blank" style="color: #fff; text-decoration: none;">
+                <i class="fab fa-whatsapp"></i> واتساب
+            </a>
+        </p>
+        <p>© 2025 جميع الحقوق محفوظة لمبادرة إكرام الضيف</p>
+    </footer>
+
+    <script>
+        function changeLanguage(lang) {
+            const currentPage = window.location.pathname.split('/').pop(); // اسم الصفحة الحالية
+            const pageName = currentPage.replace(/(-[a-z]{2})?\.html/, ''); // إزالة أي لاحقة لغة موجودة
+            const newPage = lang === 'ar' ? `${pageName}.html` : `${pageName}_${lang}.html`; // بناء الرابط الجديد
+            window.location.href = newPage; // الانتقال إلى الرابط الجديد
+        }
+    </script>
+</body>
+
+</html>

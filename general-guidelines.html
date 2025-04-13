@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="إرشادات عامة لمبادرة إكرام الضيف">
+    <title>إرشادات عامة - إكرام الضيف</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #F9F9F9;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #9B6FB1;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar .logo img {
+            height: 60px;
+        }
+
+        .navbar .dropdown select {
+            background-color: #B3C79C;
+            color: #fff;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .navbar .dropdown select:hover {
+            background-color: #9B6FB1;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 120px 20px 50px;
+            background: linear-gradient(to bottom, #9B6FB1, #B3C79C);
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 3rem; /* Increased font size */
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        /* Sections as Cards */
+        section {
+            padding: 40px 20px;
+        }
+
+        .card {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .card i {
+            font-size: 24px;
+            color: #6C9A8B;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            color: #6C9A8B;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        /* Section Titles */
+        section h3 {
+            font-size: 2rem; /* Increased font size */
+            color: #6C9A8B;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #B3C79C;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+
+        footer img {
+            height: 30px;
+            margin-bottom: 5px;
+        }
+
+        footer p {
+            margin: 3px 0;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #B3C79C;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .toc a i, section h3 i, ul li i {
+            color: #9B6FB1; /* Primary brand color */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Logo.png" alt="إكرام الضيف"> <!-- شعار الهيدر -->
+        </div>
+        <div class="dropdown">
+            <select onchange="changeLanguage(this.value)">
+                <option value="general-guidelines.html" selected>العربية</option>
+                <option value="general-guidelines_en.html">English</option>
+                <option value="general-guidelines_fr.html">Français</option>
+                <option value="general-guidelines_de.html">Deutsch</option>
+            </select>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>إرشادات عامة</h1>
+        <p>تعرف على الإرشادات العامة التي تساعدك أثناء رحلتك.</p>
+    </section>
+
+    <!-- فهرس -->
+    <div class="toc" style="padding: 40px 20px; text-align: right;">
+        <h2 style="color: #9B6FB1;"><i class="fas fa-book"></i> فهرس الإرشادات العامة</h2>
+        <ul style="list-style: none; padding: 0; font-size: 1.1rem;">
+            <li><a href="#journey" style="text-decoration: none; color: #9B6FB1;"><i class="fas fa-chevron-circle-right"></i> مراحل رحلة الحاج</a></li>
+            <li><a href="#apps" style="text-decoration: none; color: #9B6FB1;"><i class="fas fa-chevron-circle-right"></i> التطبيقات والخدمات</a></li>
+            <li><a href="#foodapps" style="text-decoration: none; color: #9B6FB1;"><i class="fas fa-chevron-circle-right"></i> تطبيقات توصيل الطعام</a></li>
+            <li><a href="#transport" style="text-decoration: none; color: #9B6FB1;"><i class="fas fa-chevron-circle-right"></i> تطبيقات النقل والمواصلات</a></li>
+            <li><a href="#emergency" style="text-decoration: none; color: #9B6FB1;"><i class="fas fa-chevron-circle-right"></i> أرقام الطوارئ</a></li>
+            <li><a href="#tips" style="text-decoration: none; color: #9B6FB1;"><i class="fas fa-chevron-circle-right"></i> نصائح عامة</a></li>
+        </ul>
+    </div>
+
+    <!-- مراحل رحلة الحاج -->
+    <section id="journey" style="padding: 40px 20px;">
+        <h3><i class="fas fa-map-signs"></i> مراحل رحلة الحاج</h3>
+        <div style="display: flex; gap: 20px; flex-wrap: wrap; font-size: 1.05rem;">
+            <div style="flex: 1; min-width: 200px;" class="card">
+                <div style="font-size: 20px; font-weight: bold; color: #fff; background-color: #6C9A8B; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px;">1</div>
+                الوصول إلى مكة
+            </div>
+            <div style="flex: 1; min-width: 200px;" class="card">
+                <div style="font-size: 20px; font-weight: bold; color: #fff; background-color: #6C9A8B; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px;">2</div>
+                الإحرام
+            </div>
+            <div style="flex: 1; min-width: 200px;" class="card">
+                <div style="font-size: 20px; font-weight: bold; color: #fff; background-color: #6C9A8B; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px;">3</div>
+                الطواف والسعي
+            </div>
+            <div style="flex: 1; min-width: 200px;" class="card">
+                <div style="font-size: 20px; font-weight: bold; color: #fff; background-color: #6C9A8B; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px;">4</div>
+                يوم عرفة
+            </div>
+            <div style="flex: 1; min-width: 200px;" class="card">
+                <div style="font-size: 20px; font-weight: bold; color: #fff; background-color: #6C9A8B; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px;">5</div>
+                مزدلفة
+            </div>
+            <div style="flex: 1; min-width: 200px;" class="card">
+                <div style="font-size: 20px; font-weight: bold; color: #fff; background-color: #6C9A8B; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px;">6</div>
+                منى ورمي الجمرات
+            </div>
+            <div style="flex: 1; min-width: 200px;" class="card">
+                <div style="font-size: 20px; font-weight: bold; color: #fff; background-color: #6C9A8B; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px;">7</div>
+                طواف الإفاضة
+            </div>
+            <div style="flex: 1; min-width: 200px;" class="card">
+                <div style="font-size: 20px; font-weight: bold; color: #fff; background-color: #6C9A8B; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px;">8</div>
+                طواف الوداع
+            </div>
+        </div>
+    </section>
+
+    <section id="apps" style="padding: 40px 20px;">
+        <h3><i class="fas fa-mobile-alt"></i> التطبيقات والخدمات</h3>
+        <ul style="list-style: none; padding: 0; font-size: 1.05rem;">
+          <li><i class="fas fa-check-circle" style="color:#6C9A8B;"></i> تطبيق نسك: <a href="https://www.nusuk.sa" target="_blank">www.nusuk.sa</a></li>
+          <li><i class="fas fa-check-circle" style="color:#6C9A8B;"></i> تطبيق تنقل (عربات الحرم): <a href="https://www.tanqol.com" target="_blank">www.tanqol.com</a></li>
+          <li><i class="fas fa-check-circle" style="color:#6C9A8B;"></i> خرائط: <a href="https://maps.google.com" target="_blank">Google Maps</a></li>
+          <li><i class="fas fa-check-circle" style="color:#6C9A8B;"></i> الترجمة: <a href="https://translate.google.com" target="_blank">Google Translate</a></li>
+        </ul>
+      </section>
+      
+      <section id="foodapps" style="padding: 40px 20px;">
+        <h3><i class="fas fa-utensils"></i> تطبيقات توصيل الطعام</h3>
+        <ul style="list-style: none; padding: 0; font-size: 1.05rem;">
+          <li><i class="fas fa-check-circle" style="color:#6C9A8B;"></i> هنقرستيشن: <a href="https://www.hungerstation.com" target="_blank">HungerStation</a></li>
+          <li><i class="fas fa-check-circle" style="color:#6C9A8B;"></i> جاهز: <a href="https://jahez.net" target="_blank">Jahez</a></li>
+          <li><i class="fas fa-check-circle" style="color:#6C9A8B;"></i> مرسول: <a href="https://www.mrsool.co" target="_blank">Mrsool</a></li>
+        </ul>
+      </section>
+      
+      <section id="transport" style="padding: 40px 20px;">
+        <h3><i class="fas fa-car"></i> تطبيقات النقل والمواصلات</h3>
+        <ul style="list-style: none; padding: 0; font-size: 1.05rem;">
+          <li><i class="fas fa-check-circle" style="color:#6C9A8B;"></i> أوبر: <a href="https://www.uber.com/sa" target="_blank">Uber</a></li>
+          <li><i class="fas fa-check-circle" style="color:#6C9A8B;"></i> كريم: <a href="https://www.careem.com" target="_blank">Careem</a></li>
+          <li><i class="fas fa-check-circle" style="color:#6C9A8B;"></i> بولت: <a href="https://bolt.eu" target="_blank">Bolt</a></li>
+        </ul>
+      </section>
+      
+      <section id="emergency" style="padding: 40px 20px;">
+        <h3><i class="fas fa-phone-alt"></i> أرقام الطوارئ</h3>
+        <ul style="list-style: none; padding: 0; font-size: 1.05rem;">
+          <li><i class="fas fa-check-circle" style="color:#6C9A8B;"></i> الطوارئ الموحدة: 911</li>
+          <li><i class="fas fa-check-circle" style="color:#6C9A8B;"></i> وزارة الصحة: 937</li>
+          <li><i class="fas fa-check-circle" style="color:#6C9A8B;"></i> مراكز الدعم والإرشاد موزعة في المشاعر</li>
+        </ul>
+      </section>
+      
+      <section id="tips" style="padding: 40px 20px;">
+        <h3><i class="fas fa-lightbulb"></i> نصائح عامة</h3>
+        <ul style="list-style: none; padding: 0; font-size: 1.05rem;">
+          <li><i class="fas fa-check-circle" style="color:#6C9A8B;"></i> احفظ موقع سكنك جيدًا.</li>
+          <li><i class="fas fa-check-circle" style="color:#6C9A8B;"></i> اشحن هاتفك باستمرار.</li>
+          <li><i class="fas fa-check-circle" style="color:#6C9A8B;"></i> احمل نسخة إلكترونية من بطاقة الهوية.</li>
+          <li><i class="fas fa-check-circle" style="color:#6C9A8B;"></i> كن متعاونًا ومهذبًا دائمًا.</li>
+        </ul>
+      </section>
+
+    <!-- Footer -->
+    <footer>
+        <img src="Arabic+English  Logo_V.png" alt="إكرام الضيف"> <!-- شعار الفوتر -->
+        <p>للتواصل: 
+            <a href="mailto:IkramDH@arbhaj.com" style="color: #fff;">IkramDH@arbhaj.com</a> |
+            <a href="https://wa.me/966125111940" target="_blank" style="color: #fff; text-decoration: none;">
+                <i class="fab fa-whatsapp"></i> واتساب
+            </a>
+        </p>
+        <p>© 2025 جميع الحقوق محفوظة لمبادرة إكرام الضيف</p>
+    </footer>
+
+    <script>
+        function changeLanguage(lang) {
+            const currentPage = window.location.pathname.split('/').pop();
+            const pageName = currentPage.replace(/(-[a-z]{2})?\.html/, '');
+            const newPage = lang; // Use the selected value directly
+            window.location.href = newPage;
+        }
+    </script>
+</body>
+
+</html>

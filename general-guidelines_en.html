@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>General Guidelines - Ikram AlDuyuf</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+  <style>
+    body { font-family: 'Cairo', sans-serif; margin: 0; padding: 0; background: #F9F9F9; color: #333; }
+    .navbar { display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; background-color: #9B6FB1; box-shadow: 0 4px 6px rgba(0,0,0,0.1); position: fixed; top: 0; width: 100%; z-index: 1000; }
+    .navbar .logo img { height: 60px; }
+    .navbar .dropdown select { background-color: #B3C79C; color: #fff; border: none; padding: 5px 15px; border-radius: 20px; font-size: 1rem; cursor: pointer; }
+    .hero { text-align: center; padding: 120px 20px 50px; background: linear-gradient(to bottom, #9B6FB1, #B3C79C); color: #fff; }
+    .hero h1 { font-size: 3rem; margin-bottom: 20px; }
+    .hero p { font-size: 1.2rem; margin-bottom: 30px; }
+    section { padding: 40px 20px; }
+    h3 { font-size: 2rem; color: #6C9A8B; margin-bottom: 20px; }
+    ul { list-style: none; padding: 0; font-size: 1.05rem; }
+    ul li { margin-bottom: 10px; }
+    .card { background-color: #f9f9f9; padding: 15px; border-radius: 10px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px; }
+    footer { background-color: #B3C79C; color: #fff; text-align: center; padding: 15px; }
+    footer img { height: 30px; margin-bottom: 5px; }
+    footer a { color: #fff; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"><img src="Logo.png" alt="Ikram AlDuyuf" /></div>
+    <div class="dropdown">
+      <select onchange="changeLanguage(this.value)">
+        <option value="general-guidelines_en.html" selected>English</option>
+        <option value="general-guidelines.html">العربية</option>
+        <option value="general-guidelines_fr.html">Français</option>
+        <option value="general-guidelines_de.html">Deutsch</option>
+      </select>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>General Guidelines</h1>
+    <p>Discover essential general instructions to help you during your pilgrimage.</p>
+  </section>
+
+  <!-- TOC -->
+  <div class="toc" style="padding: 40px 20px;">
+    <h2 style="color: #9B6FB1;"><i class="fas fa-book"></i> General Guidelines Index</h2>
+    <ul>
+      <li><a href="#journey" style="color: #9B6FB1;"><i class="fas fa-chevron-circle-right"></i> Pilgrim Journey Stages</a></li>
+      <li><a href="#apps" style="color: #9B6FB1;"><i class="fas fa-chevron-circle-right"></i> Apps and Services</a></li>
+      <li><a href="#foodapps" style="color: #9B6FB1;"><i class="fas fa-chevron-circle-right"></i> Food Delivery Apps</a></li>
+      <li><a href="#transport" style="color: #9B6FB1;"><i class="fas fa-chevron-circle-right"></i> Transportation Apps</a></li>
+      <li><a href="#emergency" style="color: #9B6FB1;"><i class="fas fa-chevron-circle-right"></i> Emergency Numbers</a></li>
+      <li><a href="#tips" style="color: #9B6FB1;"><i class="fas fa-chevron-circle-right"></i> General Tips</a></li>
+    </ul>
+  </div>
+
+  <!-- Sections -->
+  <section id="journey">
+    <h3><i class="fas fa-map-signs"></i> Pilgrim Journey Stages</h3>
+    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+      <div class="card">1 - Arrival in Makkah</div>
+      <div class="card">2 - Ihram</div>
+      <div class="card">3 - Tawaf and Sa’i</div>
+      <div class="card">4 - Day of Arafah</div>
+      <div class="card">5 - Muzdalifah</div>
+      <div class="card">6 - Mina and stoning</div>
+      <div class="card">7 - Tawaf Al-Ifadah</div>
+      <div class="card">8 - Farewell Tawaf</div>
+    </div>
+  </section>
+
+  <section id="apps">
+    <h3><i class="fas fa-mobile-alt"></i> Apps and Services</h3>
+    <ul>
+      <li><i class="fas fa-check-circle"></i> <a href="https://www.nusuk.sa" target="_blank">Nusuk</a></li>
+      <li><i class="fas fa-check-circle"></i> <a href="https://www.tanqol.com" target="_blank">Tanqol (Haram Carts)</a></li>
+      <li><i class="fas fa-check-circle"></i> <a href="https://maps.google.com" target="_blank">Google Maps</a></li>
+      <li><i class="fas fa-check-circle"></i> <a href="https://translate.google.com" target="_blank">Google Translate</a></li>
+    </ul>
+  </section>
+
+  <section id="foodapps">
+    <h3><i class="fas fa-utensils"></i> Food Delivery Apps</h3>
+    <ul>
+      <li><i class="fas fa-check-circle"></i> <a href="https://www.hungerstation.com" target="_blank">HungerStation</a></li>
+      <li><i class="fas fa-check-circle"></i> <a href="https://jahez.net" target="_blank">Jahez</a></li>
+      <li><i class="fas fa-check-circle"></i> <a href="https://www.mrsool.co" target="_blank">Mrsool</a></li>
+    </ul>
+  </section>
+
+  <section id="transport">
+    <h3><i class="fas fa-car"></i> Transportation Apps</h3>
+    <ul>
+      <li><i class="fas fa-check-circle"></i> <a href="https://www.uber.com/sa" target="_blank">Uber</a></li>
+      <li><i class="fas fa-check-circle"></i> <a href="https://www.careem.com" target="_blank">Careem</a></li>
+      <li><i class="fas fa-check-circle"></i> <a href="https://bolt.eu" target="_blank">Bolt</a></li>
+    </ul>
+  </section>
+
+  <section id="emergency">
+    <h3><i class="fas fa-phone-alt"></i> Emergency Numbers</h3>
+    <ul>
+      <li><i class="fas fa-check-circle"></i> General Emergency: 911</li>
+      <li><i class="fas fa-check-circle"></i> Ministry of Health: 937</li>
+      <li><i class="fas fa-check-circle"></i> Support and guidance centers are located throughout the holy sites</li>
+    </ul>
+  </section>
+
+  <section id="tips">
+    <h3><i class="fas fa-lightbulb"></i> General Tips</h3>
+    <ul>
+      <li><i class="fas fa-check-circle"></i> Memorize your accommodation location.</li>
+      <li><i class="fas fa-check-circle"></i> Keep your phone charged.</li>
+      <li><i class="fas fa-check-circle"></i> Carry a digital copy of your ID.</li>
+      <li><i class="fas fa-check-circle"></i> Be cooperative and polite at all times.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <img src="Arabic+English  Logo_V.png" alt="Ikram AlDuyuf" />
+    <p>Contact: <a href="mailto:IkramDH@arbhaj.com">IkramDH@arbhaj.com</a> | 
+       <a href="https://wa.me/966125111940" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></p>
+    <p>© 2025 All rights reserved - Ikram AlDuyuf Initiative</p>
+  </footer>
+
+  <script>
+    function changeLanguage(lang) {
+        const currentPage = window.location.pathname.split('/').pop();
+        const pageName = currentPage.replace(/(-[a-z]{2})?\.html/, '');
+        const newPage = lang; // Use the selected value directly
+        window.location.href = newPage;
+    }
+  </script>
+</body>
+</html>

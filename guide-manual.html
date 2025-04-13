@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="دليل المرشد لمبادرة إكرام الضيف">
+    <title>دليل المرشد - إكرام الضيف</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #F9F9F9;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #9B6FB1;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar .logo img {
+            height: 60px;
+        }
+
+        .navbar .dropdown select {
+            background-color: #B3C79C;
+            color: #fff;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .navbar .dropdown select:hover {
+            background-color: #9B6FB1;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 120px 20px 50px;
+            background: linear-gradient(to bottom, #9B6FB1, #B3C79C);
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        /* Sections as Cards */
+        section {
+            padding: 40px 20px;
+        }
+
+        .card {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .card i {
+            font-size: 24px;
+            color: #6C9A8B;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            color: #6C9A8B;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #B3C79C;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer img {
+            height: 40px;
+            margin-bottom: 10px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #B3C79C;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Logo.png" alt="إكرام الضيف"> <!-- شعار الهيدر -->
+        </div>
+        <div class="dropdown">
+          <select onchange="location = this.value;">
+            <option value="guide-manual.html" selected>العربية</option>
+            <option value="guide-manual_en.html">English</option>
+            <option value="guide-manual_fr.html">Français</option>
+            <option value="guide-manual_de.html">Deutsch</option>
+        </select>
+        
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>دليل المرشد</h1>
+        <p>تعليمات خاصة بالمرشدين لتقديم أفضل تجربة للحجاج.</p>
+    </section>
+
+    <!-- Sections -->
+    <div class="toc" style="padding: 40px 20px; text-align: right;">
+        <h2 style="color: #9B6FB1; font-size: 2rem;"><i class="fas fa-book"></i> فهرس دليل المرشد</h2>
+        <ul style="list-style: none; padding: 0; font-size: 1.1rem;">
+            <li><a href="#roles" style="text-decoration: none; color: #9B6FB1;">
+                <i class="fas fa-chevron-circle-right"></i> أدوار ومسؤوليات المرشد</a></li>
+            <li><a href="#special" style="text-decoration: none; color: #9B6FB1;">
+                <i class="fas fa-chevron-circle-right"></i> التعامل مع الفئات الخاصة</a></li>
+            <li><a href="#reporting" style="text-decoration: none; color: #9B6FB1;">
+                <i class="fas fa-chevron-circle-right"></i> آلية البلاغات والتصعيد</a></li>
+            <li><a href="#daily" style="text-decoration: none; color: #9B6FB1;">
+                <i class="fas fa-chevron-circle-right"></i> التقارير اليومية</a></li>
+            <li><a href="#ethics" style="text-decoration: none; color: #9B6FB1;">
+                <i class="fas fa-chevron-circle-right"></i> سلوكيات وأخلاقيات المرشد</a></li>
+            <li><a href="#scenarios" style="text-decoration: none; color: #9B6FB1;">
+                <i class="fas fa-chevron-circle-right"></i> سيناريوهات وتدريب ميداني</a></li>
+            <li><a href="#awareness" style="text-decoration: none; color: #9B6FB1;">
+                <i class="fas fa-chevron-circle-right"></i> دور المرشد في التوعية</a></li>
+            <li><a href="#evaluation" style="text-decoration: none; color: #9B6FB1;">
+                <i class="fas fa-chevron-circle-right"></i> تقييم المرشد</a></li>
+        </ul>
+    </div>
+    
+
+    <!-- أدوار ومسؤوليات المرشد -->
+<section id="roles" style="padding: 40px 20px; background-color: #F9F9F9;">
+    <h3 style="color:#6C9A8B; font-size: 1.8rem;"><i class="fas fa-user-tie"></i> أدوار ومسؤوليات المرشد</h3>
+    <ul style="list-style: none; padding: 0; font-size: 1.05rem;">
+      <li><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>مرافقة الحجاج من الوصول حتى المغادرة.</li>
+      <li><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>تقديم الدعم الديني والخدمي والإداري.</li>
+      <li><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>ضمان سلامة الحجاج وراحتهم.</li>
+      <li><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>رفع تقارير يومية شاملة عن الحجاج.</li>
+      <li><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>التواصل الفعّال مع المشرفين والجهات.</li>
+    </ul>
+  </section>
+  
+  <!-- التعامل مع الفئات الخاصة -->
+  <section id="special" style="padding: 40px 20px; background-color: #F9F9F9;">
+    <h3 style="color:#6C9A8B; font-size: 1.8rem;"><i class="fas fa-wheelchair"></i> التعامل مع الفئات الخاصة</h3>
+    <ul style="list-style: none; padding: 0; font-size: 1.05rem;">
+      <li><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>التحدث بوضوح مع كبار السن.</li>
+      <li><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>مرافقة ذوي الاحتياجات الخاصة شخصيًا.</li>
+      <li><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>ضمان توفر وسائل نقل مخصصة ومرافق صحية ملائمة.</li>
+      <li><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>تقديم المساعدة الجسدية والنفسية عند الحاجة.</li>
+    </ul>
+  </section>
+  
+  <!-- آلية البلاغات والتصعيد -->
+  <section id="reporting" style="padding: 40px 20px; background-color: #F9F9F9;">
+    <h3 style="color:#6C9A8B; font-size: 1.8rem;"><i class="fas fa-bullhorn"></i> آلية البلاغات والتصعيد</h3>
+    <ul style="list-style: none; padding: 0; font-size: 1.05rem;">
+      <li><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>تقييم الحالة وتصنيفها (طارئة / غير طارئة).</li>
+      <li><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>استخدام النماذج الرسمية للتبليغ.</li>
+      <li><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>رفع البلاغ للمشرف المختص فورًا.</li>
+      <li><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>توثيق الإجراء ومتابعته حتى الحل.</li>
+    </ul>
+  </section>
+  
+  <!-- التقارير اليومية -->
+  <section id="daily" style="padding: 40px 20px; background-color: #F9F9F9;">
+    <h3 style="color:#6C9A8B; font-size: 1.8rem;"><i class="fas fa-file-alt"></i> التقارير اليومية</h3>
+    <ul style="list-style: none; padding: 0; font-size: 1.05rem;">
+      <li><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>تتضمن: عدد الحجاج، الحالات الصحية، الملاحظات، والشكاوى.</li>
+      <li><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>تُرفع قبل الساعة 10 مساءً بشكل منظم.</li>
+      <li><i class="fas fa-check-circle" style="color:#6C9A8B; margin-left: 5px;"></i>يجب أن تكون مكتوبة بلغة واضحة ودقيقة.</li>
+    </ul>
+  </section>
+  
+  <!-- سلوكيات وأخلاقيات المرشد -->
+  <section id="ethics" style="padding: 40px 20px;">
+    <h3 style="color:#6C9A8B; font-size: 1.8rem;"><i class="fas fa-user-check"></i> سلوكيات وأخلاقيات المرشد</h3>
+    <div style="display: flex; gap: 20px; flex-wrap: wrap; font-size: 1.05rem;">
+      <div style="flex: 1; min-width: 200px; background-color: #eaf7f2; padding: 15px; border-radius: 10px; text-align: center;">
+        <i class="fas fa-comment-alt" style="font-size: 24px; color:#6C9A8B;"></i><br>
+        اللباقة في الحديث
+      </div>
+      <div style="flex: 1; min-width: 200px; background-color: #eaf7f2; padding: 15px; border-radius: 10px; text-align: center;">
+        <i class="fas fa-hands" style="font-size: 24px; color:#6C9A8B;"></i><br>
+        التواضع والاحترام
+      </div>
+      <div style="flex: 1; min-width: 200px; background-color: #eaf7f2; padding: 15px; border-radius: 10px; text-align: center;">
+        <i class="fas fa-hand-holding-heart" style="font-size: 24px; color:#6C9A8B;"></i><br>
+        حسن الاستماع وتقديم العون
+      </div>
+    </div>
+  </section>
+  
+  <!-- سيناريوهات وتدريب ميداني -->
+  <section id="scenarios" style="padding: 40px 20px; background-color: #F9F9F9;">
+    <h3 style="color:#6C9A8B; font-size: 1.8rem;"><i class="fas fa-chalkboard-teacher"></i> سيناريوهات وتدريب ميداني</h3>
+    <ul style="list-style: none; padding: 0; font-size: 1.05rem;">
+      <li><i class="fas fa-check-circle" style="color:#6C9A8B;"></i> حاج يشعر بآلام في صدره: نهدّئه ونتصل بالإسعاف فورًا.</li>
+      <li><i class="fas fa-check-circle" style="color:#6C9A8B;"></i> حاج أضاع بطاقته: نرشده لأقرب مركز دعم.</li>
+      <li><i class="fas fa-check-circle" style="color:#6C9A8B;"></i> حاج يتجادل: نحافظ على الهدوء ونوضح له التعليمات.</li>
+      <li><i class="fas fa-check-circle" style="color:#6C9A8B;"></i> حاج يتحدث بلغة مختلفة: نستخدم الترجمة أو مرشد بلغته.</li>
+    </ul>
+  </section>
+  
+  <!-- دور المرشد في التوعية -->
+  <section id="awareness" style="padding: 40px 20px;">
+    <h3 style="color:#6C9A8B; font-size: 1.8rem;"><i class="fas fa-bullseye"></i> دور المرشد في التوعية</h3>
+    <div style="display: flex; gap: 20px; flex-wrap: wrap; font-size: 1.05rem;">
+      <div style="flex: 1; min-width: 200px; background-color: #f5fff7; padding: 15px; border-radius: 10px; text-align: center;">
+        <i class="fas fa-book-reader" style="font-size: 24px; color:#6C9A8B;"></i><br>
+        شرح مبسّط للمناسك للحجاج
+      </div>
+      <div style="flex: 1; min-width: 200px; background-color: #f5fff7; padding: 15px; border-radius: 10px; text-align: center;">
+        <i class="fas fa-stethoscope" style="font-size: 24px; color:#6C9A8B;"></i><br>
+        التذكير بالسلوكيات الصحية
+      </div>
+      <div style="flex: 1; min-width: 200px; background-color: #f5fff7; padding: 15px; border-radius: 10px; text-align: center;">
+        <i class="fas fa-smile-beam" style="font-size: 24px; color:#6C9A8B;"></i><br>
+        التفاعل مع الحجاج وطمأنتهم روحياً
+      </div>
+    </div>
+  </section>
+  
+  <!-- تقييم المرشد -->
+  <section id="evaluation" style="padding: 40px 20px; background-color: #F9F9F9;">
+    <h3 style="color:#6C9A8B; font-size: 1.8rem;"><i class="fas fa-star"></i> تقييم المرشد</h3>
+    <ul style="list-style: none; padding: 0; font-size: 1.05rem;">
+      <li><i class="fas fa-check-circle" style="color:#6C9A8B;"></i> يتم من خلال: تقارير الأداء، رضا الحجاج، تقييم المشرف.</li>
+      <li><i class="fas fa-check-circle" style="color:#6C9A8B;"></i> يُؤخذ بعين الاعتبار في اختيار المرشدين للمواسم القادمة.</li>
+      <li><i class="fas fa-check-circle" style="color:#6C9A8B;"></i> يشمل التقييم: الالتزام، الكفاءة، اللطف، التفاعل.</li>
+    </ul>
+  </section>
+</body>
+
+</html>
